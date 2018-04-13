@@ -1,0 +1,28 @@
+group 'epam.homework'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-context:4.3.16.RELEASE'
+    compile 'org.springframework:spring-core:4.3.16.RELEASE'
+    compile 'org.springframework:spring-beans:4.3.15.RELEASE'
+    compile 'org.springframework:spring-jdbc:4.3.15.RELEASE'
+    compile group: 'org.springframework', name: 'spring-tx', version: '4.3.14.RELEASE'
+    compile group: 'org.springframework', name: 'spring-orm', version: '4.3.14.RELEASE'
+    compile group: 'org.aspectj', name: 'aspectjrt', version: '1.8.10'
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.10'
+    compile group: 'org.hsqldb', name: 'hsqldb', version: '2.4.0'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '4.2.8.Final'
+    compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '4.2.8.Final'
+    compile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.0-api', version: '1.0.1.Final'
+
+    testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.14.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

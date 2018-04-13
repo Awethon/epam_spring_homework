@@ -1,0 +1,9 @@
+rootProject.name = 'lapin_hw'
+include 'lab-3-core'
+include 'lab-4-core'
+include 'lab-5-aop'
+include 'lab-6-jdbc'
+include 'lab-7-orm'
+include 'lab-8-tx'
+include 'lab-9-mvc'
+
